@@ -62,41 +62,86 @@
                 <p class="text-3xl ml-1">SEO Project</p>
             </div>
 
-            <div class="relative w-full overflow-hidden mt-2">
+            <div class="relative w-full p-6 overflow-hidden mt-4">
                 <div id="slider" class="flex transition-transform duration-700 ease-in-out">
 
-                    <!-- Project 1 -->
-                    <div class="min-w-full flex items-center justify-center h-64 bg-blue-500 text-white text-3xl">
-                        <img src="/myproj/Portfolio/images/proj1.png" alt="">
-                        <p>Built a basic website to understand site structure, on-page SEO, and content placement.
-                            It was not a professional project but gave me hands-on clarity on how SEO works practically.
-                        </p>
+                    <!-- PROJECT 1 -->
+                    <div class="min-w-full p-4">
+                        <div class="bg-white/10 rounded-2xl p-7 h-110 flex flex-col gap-3">
+
+                            <!-- Image -->
+                            <img src="/myproj/Portfolio/images/proj1.png" class="h-55 w-full object-cover rounded-xl" />
+
+                            <!-- Text -->
+                            <p class="text-2xl text-gray-200">
+                                Built a basic website to understand site structure, on-page SEO,
+                                and content placement. Hands-on clarity on SEO fundamentals.
+                            </p>
+
+                            <!-- Tag -->
+                            <div class="flex justify-center">
+                                <a href="https://your-project-link-1.com" target="_blank" class="mt-0  w-fit px-4 py-1 text-1x rounded-full flex items-center
+                  bg-indigo-500 hover:bg-indigo-600 transition text-2xl">
+                                    View Project
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
 
-                    <!-- Project 2 -->
-                    <div class="min-w-full flex items-center justify-center h-64 bg-green-500 text-white text-3xl">
-                        <img src="/myproj/Portfolio/images/proj2.png" alt="">
-                        <p>
-                            AI Resume Checker (Experimental)
-                            Built an AI-based resume checker to analyze resumes.
-                            Although the project got corrupted, it gave me exposure to AI experimentation and logic
-                            building.
-                        </p>
+                    <!-- PROJECT 2 -->
+                    <div class="min-w-full p-4">
+                        <div class="bg-white/10  rounded-2xl p-7 h-110 flex flex-col gap-3">
+
+                            <img src="/myproj/Portfolio/images/proj2.png" class="h-60 w-full object-cover rounded-xl" />
+
+                            <p class="text-2xl text-gray-200">
+                                AI Resume Checker (Experimental). Gained exposure to AI logic and
+                                experimentation despite project corruption.
+                            </p>
+                            <div class="flex justify-center">
+                                <a href="https://your-project-link-2.com" target="_blank" class="mt-2  w-fit px-4 py-1 rounded-full
+                  bg-green-500 hover:bg-green-600 transition text-2xl">
+                                    View Project
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
 
-                    <!-- Project 3 -->
-                    <div class="min-w-full flex items-center justify-center h-64 bg-red-500 text-white text-3xl">
-                        <img src="/myproj/Portfolio/images/proj3.png" alt="">
-                        <p>Created an SEO strategy for ConvertEdge Tech to understand keyword mapping, site structure,
-                            and content alignment.
-                            This helped me grasp how SEO decisions are planned at a strategic level.</p>
+                    <!-- PROJECT 3 -->
+                    <div class="min-w-full p-4">
+                        <div class="bg-white/10  rounded-2xl p-7 h-110 flex flex-col gap-3">
+
+                            <img src="/myproj/Portfolio/images/proj3.png" class="h-60 w-full object-cover rounded-xl" />
+
+                            <p class="text-2xl text-gray-200">
+                                Created SEO strategy for ConvertEdge Tech focusing on keyword mapping,
+                                site structure, and content alignment.
+                            </p>
+                            <div class="flex justify-center">
+                                <a href="https://your-project-link-3.com" target="_blank" class="mt-2  w-fit px-4 py-1 text-2xl rounded-full
+                  bg-red-500 hover:bg-red-600 transition">
+                                    View Project
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
 
+                </div>
+
+                <!-- Controls -->
+                <div class="absolute inset-y-0 left-2 flex items-center">
+                    <button onclick="prevSlide()" class="px-3 py-1 bg-white/20 rounded-full">‹</button>
+                </div>
+                <div class="absolute inset-y-0 right-2 flex items-center">
+                    <button onclick="nextSlide()" class="px-3 py-1 bg-white/20 rounded-full">›</button>
                 </div>
             </div>
 
         </div>
-        <div class="w-auto h-auto p-3 mt-5 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl transition-transform duration-300 hover:scale-105 break-inside-avoid mb-6
+        <div class="w-auto h-auto p-7 mt-5 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl transition-transform duration-300 hover:scale-105 break-inside-avoid mb-6
 ">
             <div class="flex flex-row gap-3">
                 <div class="group cursor-pointer">
@@ -238,7 +283,7 @@
             </a>
 
         </div>
-        <div class="w-auto h-auto p-7 m-3 mt-5 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl transition-transform duration-300 hover:scale-105 break-inside-avoid mb-6
+        <div class="w-auto h-auto p-5 m-3 mt-5 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl transition-transform duration-300 hover:scale-105 break-inside-avoid mb-6
 ">
             <div class="flex flex-row gap-3">
                 <div class="group cursor-pointer">
@@ -253,18 +298,76 @@
                 <p class="text-3xl ml-1">Blog</p>
             </div>
 
-            <p class="mt-3 mb-2 p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl">
+            <p class="mt-2 mb-2 p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl">
 
                 <a href="https://content-whale.com/blog/"
-                    class="text-3xl text-white hover:text-blue-400 transition ml-3">
+                    class="text-3xl text-white hover:text-blue-400 transition ml-3 flex justify-center p-5">
                     <img src="/myproj/Portfolio/images/blog.png" alt=""
-                        class="w-auto h-auto rounded-2xl border border-white/20  flex justify-center">
+                        class="w-auto h-auto rounded-2xl border border-white/20 ">
                     <p class="text-center">
                         Check out my blog about SEO
                     </p>
                 </a>
             </p>
         </div>
+
+        <!-- EXPERIENCE SECTION -->
+        <div class="max-w-3xl mx-auto mt-10">
+            <div
+                class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 transition-transform duration-300 hover:scale-102">
+
+                <!-- Header -->
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 flex items-center justify-center rounded-full bg-cyan-500/20">
+                        <!-- Icon -->
+                        <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" stroke-width="1.8"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 8v4l3 3M20 12a8 8 0 11-16 0 8 8 0 0116 0z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-semibold tracking-wide ">Experience</h2>
+                </div>
+
+                <!-- EXPERIENCE ITEM -->
+                <div class="mb-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-2xl font-medium">Role Title</h3>
+                        <span class="text-2xl text-gray-400">Start Month Year – End Month Year</span>
+                    </div>
+
+                    <p class="text-lg text-gray-400 mt-1">
+                        Organization Name | Location (Optional)
+                    </p>
+
+                    <p class="text-lg text-gray-300 mt-3 leading-relaxed">
+                        Brief description of what you worked on.
+                        Mention technologies, responsibilities, and impact.
+                        Keep it concise but meaningful.
+                    </p>
+                </div>
+
+                <div class="border-t border-white/10 my-6"></div>
+
+                <!-- EXPERIENCE ITEM -->
+                <div>
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-2xl font-medium">Role Title</h3>
+                        <span class="text-2xl text-gray-400">Start Month Year – End Month Year</span>
+                    </div>
+
+                    <p class="text-lg text-gray-400 mt-1">
+                        Organization Name | Location (Optional)
+                    </p>
+
+                    <p class="text-lg text-gray-300 mt-3 leading-relaxed">
+                        Description of work, achievements, metrics, or learning outcomes.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
 
     </div>
     <script src="script.js"></script>
